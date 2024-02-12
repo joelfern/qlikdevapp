@@ -1,0 +1,939 @@
+{
+  "qInfo": {
+    "qId": "LoadModel",
+    "qType": "LoadModel"
+  },
+  "qMetaDef": {},
+  "connectionMetaDataModels": {
+    "DataFiles": {
+      "name": "DataFiles",
+      "displayName": "DataFiles",
+      "id": "6f93cda1-15c4-4321-94e7-ac3cdcab5e4c",
+      "type": {
+        "provider": "qix-datafiles.exe",
+        "type": "qix-datafiles.exe",
+        "isFolderConnector": true,
+        "displayName": "scripteditor.dataconnectors.filedirectory",
+        "connectDialog": "scripteditor.views/fileconnectdialog/fileconnectdialog",
+        "selectDialog": "scripteditor.views/fileselectdialog/fileselectdialog",
+        "connectorMain": "assets/hldm/data-connectors/native-file-connector/connector-main-datafiles",
+        "needsConnect": false,
+        "isStandardConnector": true
+      },
+      "typeName": "qix-datafiles.exe",
+      "privileges": [
+        "read"
+      ],
+      "sourceConnectorID": "qix-datafiles.exe",
+      "dataconnectorPrefix": "",
+      "connectionString": "CUSTOM CONNECT TO \"provider=qix-datafiles.exe;path=datafiles;\"",
+      "canDelete": false,
+      "connectorImagePath": "https://cdn.qlikcloud.com/qmfe/sense-client/8.145.0/img/connector-logos/connector-folder-qvx-logo.png",
+      "connectorDisplayName": "Folder",
+      "dbInfo": {
+        "dbusage": false,
+        "ownerusage": false,
+        "dbfirst": false,
+        "specialchars": "!  　\"$\u0026'()*+,-/:;\u003c\u003e´`{}~[]\r\n\t",
+        "dbseparator": "",
+        "ownerseparator": "",
+        "quotesuffix": "\"",
+        "quoteprefix": "\"",
+        "quotesuffixfordoublequotes": "]",
+        "quoteprefixfordoublequotes": "[",
+        "keywords": []
+      }
+    }
+  },
+  "tables": [
+    {
+      "dataconnectorName": "DataFiles",
+      "dataconnectorPrefix": "",
+      "boxType": "load-file",
+      "databaseName": "Telco Customer Billing Data Full.xlsx",
+      "ownerName": "TYPE9_EXCEL_OOXML",
+      "tableName": "Billing",
+      "tableAlias": "Billing",
+      "key": "DataFiles:Telco Customer Billing Data Full.xlsx:TYPE9_EXCEL_OOXML:Billing",
+      "fields": [
+        {
+          "id": "dsd.Billing.Customer",
+          "name": "Customer",
+          "alias": "Billing.Customer",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Billing Group",
+          "name": "Billing Group",
+          "alias": "Billing.Billing Group",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Service",
+          "name": "Service",
+          "alias": "Billing.Service",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Month",
+          "name": "Month",
+          "alias": "Month",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Base Price",
+          "name": "Base Price",
+          "alias": "Base Price",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Units Consumed",
+          "name": "Units Consumed",
+          "alias": "Units Consumed",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Amount w/o GST",
+          "name": "Amount w/o GST",
+          "alias": "Amount w/o GST",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.GST",
+          "name": "GST",
+          "alias": "GST",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Amount",
+          "name": "Amount",
+          "alias": "Amount",
+          "selected": true
+        },
+        {
+          "id": "dsd.Billing.Status",
+          "name": "Status",
+          "alias": "Status",
+          "selected": true
+        }
+      ],
+      "connectionInfo": {
+        "name": "DataFiles",
+        "displayName": "DataFiles",
+        "id": "6f93cda1-15c4-4321-94e7-ac3cdcab5e4c",
+        "type": {
+          "provider": "qix-datafiles.exe",
+          "type": "qix-datafiles.exe",
+          "isFolderConnector": true,
+          "displayName": "scripteditor.dataconnectors.filedirectory",
+          "connectDialog": "scripteditor.views/fileconnectdialog/fileconnectdialog",
+          "selectDialog": "scripteditor.views/fileselectdialog/fileselectdialog",
+          "connectorMain": "assets/hldm/data-connectors/native-file-connector/connector-main-datafiles",
+          "needsConnect": false,
+          "isStandardConnector": true
+        },
+        "typeName": "qix-datafiles.exe",
+        "privileges": [
+          "read"
+        ],
+        "sourceConnectorID": "qix-datafiles.exe",
+        "dataconnectorPrefix": "",
+        "connectionString": "CUSTOM CONNECT TO \"provider=qix-datafiles.exe;path=datafiles;\"",
+        "canDelete": false,
+        "connectorImagePath": "https://cdn.qlikcloud.com/qmfe/sense-client/8.145.0/img/connector-logos/connector-folder-qvx-logo.png",
+        "connectorDisplayName": "Folder",
+        "dbInfo": {
+          "dbusage": false,
+          "ownerusage": false,
+          "dbfirst": false,
+          "specialchars": "!  　\"$\u0026'()*+,-/:;\u003c\u003e´`{}~[]\r\n\t",
+          "dbseparator": "",
+          "ownerseparator": "",
+          "quotesuffix": "\"",
+          "quoteprefix": "\"",
+          "quotesuffixfordoublequotes": "]",
+          "quoteprefixfordoublequotes": "[",
+          "keywords": []
+        }
+      },
+      "id": "dsd.Billing",
+      "fileFormatSettings": {
+        "qLabel": "embedded labels",
+        "qHeaderSize": 0,
+        "qDelimiter": {
+          "qNumber": 0,
+          "qIsMultiple": false
+        },
+        "qQuote": "standard",
+        "qCodePage": 1252,
+        "qIgnoreEOF": false,
+        "qFixedWidthDelimiters": "1",
+        "qTabSize": 0,
+        "qRecordSize": 0,
+        "qComment": ""
+      },
+      "formatSpec": "(ooxml, embedded labels, table is Billing)",
+      "selectStatement": "LOAD [Customer] AS [Customer],\n\t[Billing Group] AS [Billing Group],\n\t[Service] AS [Service],\n\t[Month] AS [Month],\n\t[Base Price] AS [Base Price],\n\t[Units Consumed] AS [Units Consumed],\n\t[Amount w/o GST] AS [Amount w/o GST],\n\t[GST] AS [GST],\n\t[Amount] AS [Amount],\n\t[Status] AS [Status]\nFROM [lib://DataFiles/Telco Customer Billing Data Full.xlsx]\n(ooxml, embedded labels, table is Billing);\n",
+      "caching": {
+        "enabled": true,
+        "type": "qvd"
+      }
+    },
+    {
+      "dataconnectorName": "DataFiles",
+      "dataconnectorPrefix": "",
+      "boxType": "load-file",
+      "databaseName": "Telco Customer Billing Data Full.xlsx",
+      "ownerName": "TYPE9_EXCEL_OOXML",
+      "tableName": "Contracts",
+      "tableAlias": "Contracts",
+      "key": "DataFiles:Telco Customer Billing Data Full.xlsx:TYPE9_EXCEL_OOXML:Contracts",
+      "fields": [
+        {
+          "id": "dsd.Contracts.Customer",
+          "name": "Customer",
+          "alias": "Contracts.Customer",
+          "selected": true
+        },
+        {
+          "id": "dsd.Contracts.Billing Group",
+          "name": "Billing Group",
+          "alias": "Contracts.Billing Group",
+          "selected": true
+        },
+        {
+          "id": "dsd.Contracts.Service",
+          "name": "Service",
+          "alias": "Contracts.Service",
+          "selected": true
+        },
+        {
+          "id": "dsd.Contracts.Contract Start",
+          "name": "Contract Start",
+          "alias": "Contract Start",
+          "selected": true
+        },
+        {
+          "id": "dsd.Contracts.Contract End",
+          "name": "Contract End",
+          "alias": "Contract End",
+          "selected": true
+        },
+        {
+          "id": "dsd.Contracts.Term",
+          "name": "Term",
+          "alias": "Term",
+          "selected": true
+        }
+      ],
+      "connectionInfo": {
+        "name": "DataFiles",
+        "displayName": "DataFiles",
+        "id": "6f93cda1-15c4-4321-94e7-ac3cdcab5e4c",
+        "type": {
+          "provider": "qix-datafiles.exe",
+          "type": "qix-datafiles.exe",
+          "isFolderConnector": true,
+          "displayName": "scripteditor.dataconnectors.filedirectory",
+          "connectDialog": "scripteditor.views/fileconnectdialog/fileconnectdialog",
+          "selectDialog": "scripteditor.views/fileselectdialog/fileselectdialog",
+          "connectorMain": "assets/hldm/data-connectors/native-file-connector/connector-main-datafiles",
+          "needsConnect": false,
+          "isStandardConnector": true
+        },
+        "typeName": "qix-datafiles.exe",
+        "privileges": [
+          "read"
+        ],
+        "sourceConnectorID": "qix-datafiles.exe",
+        "dataconnectorPrefix": "",
+        "connectionString": "CUSTOM CONNECT TO \"provider=qix-datafiles.exe;path=datafiles;\"",
+        "canDelete": false,
+        "connectorImagePath": "https://cdn.qlikcloud.com/qmfe/sense-client/8.145.0/img/connector-logos/connector-folder-qvx-logo.png",
+        "connectorDisplayName": "Folder",
+        "dbInfo": {
+          "dbusage": false,
+          "ownerusage": false,
+          "dbfirst": false,
+          "specialchars": "!  　\"$\u0026'()*+,-/:;\u003c\u003e´`{}~[]\r\n\t",
+          "dbseparator": "",
+          "ownerseparator": "",
+          "quotesuffix": "\"",
+          "quoteprefix": "\"",
+          "quotesuffixfordoublequotes": "]",
+          "quoteprefixfordoublequotes": "[",
+          "keywords": []
+        }
+      },
+      "id": "dsd.Contracts",
+      "fileFormatSettings": {
+        "qLabel": "embedded labels",
+        "qHeaderSize": 0,
+        "qDelimiter": {
+          "qNumber": 0,
+          "qIsMultiple": false
+        },
+        "qQuote": "standard",
+        "qCodePage": 1252,
+        "qIgnoreEOF": false,
+        "qFixedWidthDelimiters": "1",
+        "qTabSize": 0,
+        "qRecordSize": 0,
+        "qComment": ""
+      },
+      "formatSpec": "(ooxml, embedded labels, table is Contracts)",
+      "selectStatement": "LOAD [Customer] AS [Customer],\n\t[Billing Group] AS [Billing Group],\n\t[Service] AS [Service],\n\t[Contract Start] AS [Contract Start],\n\t[Contract End] AS [Contract End],\n\t[Term] AS [Term]\nFROM [lib://DataFiles/Telco Customer Billing Data Full.xlsx]\n(ooxml, embedded labels, table is Contracts);\n",
+      "caching": {
+        "enabled": true,
+        "type": "qvd"
+      }
+    },
+    {
+      "dataconnectorName": "DataFiles",
+      "dataconnectorPrefix": "",
+      "boxType": "load-file",
+      "databaseName": "Telco Customer Billing Data Full.xlsx",
+      "ownerName": "TYPE9_EXCEL_OOXML",
+      "tableName": "Customer Cost Centres",
+      "tableAlias": "Customer Cost Centres",
+      "key": "DataFiles:Telco Customer Billing Data Full.xlsx:TYPE9_EXCEL_OOXML:Customer Cost Centres",
+      "fields": [
+        {
+          "id": "dsd.Customer Cost Centres.Customer",
+          "name": "Customer",
+          "alias": "Customer Cost Centres.Customer",
+          "selected": true
+        },
+        {
+          "id": "dsd.Customer Cost Centres.Billing Group",
+          "name": "Billing Group",
+          "alias": "Customer Cost Centres.Billing Group",
+          "selected": true
+        },
+        {
+          "id": "dsd.Customer Cost Centres.Service",
+          "name": "Service",
+          "alias": "Customer Cost Centres.Service",
+          "selected": true
+        },
+        {
+          "id": "dsd.Customer Cost Centres.Department",
+          "name": "Department",
+          "alias": "Department",
+          "selected": true
+        },
+        {
+          "id": "dsd.Customer Cost Centres.Cost Centre",
+          "name": "Cost Centre",
+          "alias": "Cost Centre",
+          "selected": true
+        },
+        {
+          "id": "dsd.Customer Cost Centres.Allocation",
+          "name": "Allocation",
+          "alias": "Allocation",
+          "selected": true
+        }
+      ],
+      "connectionInfo": {
+        "name": "DataFiles",
+        "displayName": "DataFiles",
+        "id": "6f93cda1-15c4-4321-94e7-ac3cdcab5e4c",
+        "type": {
+          "provider": "qix-datafiles.exe",
+          "type": "qix-datafiles.exe",
+          "isFolderConnector": true,
+          "displayName": "scripteditor.dataconnectors.filedirectory",
+          "connectDialog": "scripteditor.views/fileconnectdialog/fileconnectdialog",
+          "selectDialog": "scripteditor.views/fileselectdialog/fileselectdialog",
+          "connectorMain": "assets/hldm/data-connectors/native-file-connector/connector-main-datafiles",
+          "needsConnect": false,
+          "isStandardConnector": true
+        },
+        "typeName": "qix-datafiles.exe",
+        "privileges": [
+          "read"
+        ],
+        "sourceConnectorID": "qix-datafiles.exe",
+        "dataconnectorPrefix": "",
+        "connectionString": "CUSTOM CONNECT TO \"provider=qix-datafiles.exe;path=datafiles;\"",
+        "canDelete": false,
+        "connectorImagePath": "https://cdn.qlikcloud.com/qmfe/sense-client/8.145.0/img/connector-logos/connector-folder-qvx-logo.png",
+        "connectorDisplayName": "Folder",
+        "dbInfo": {
+          "dbusage": false,
+          "ownerusage": false,
+          "dbfirst": false,
+          "specialchars": "!  　\"$\u0026'()*+,-/:;\u003c\u003e´`{}~[]\r\n\t",
+          "dbseparator": "",
+          "ownerseparator": "",
+          "quotesuffix": "\"",
+          "quoteprefix": "\"",
+          "quotesuffixfordoublequotes": "]",
+          "quoteprefixfordoublequotes": "[",
+          "keywords": []
+        }
+      },
+      "id": "dsd.Customer Cost Centres",
+      "fileFormatSettings": {
+        "qLabel": "embedded labels",
+        "qHeaderSize": 0,
+        "qDelimiter": {
+          "qNumber": 0,
+          "qIsMultiple": false
+        },
+        "qQuote": "standard",
+        "qCodePage": 1252,
+        "qIgnoreEOF": false,
+        "qFixedWidthDelimiters": "1",
+        "qTabSize": 0,
+        "qRecordSize": 0,
+        "qComment": ""
+      },
+      "formatSpec": "(ooxml, embedded labels, table is [Customer Cost Centres])",
+      "selectStatement": "LOAD [Customer] AS [Customer],\n\t[Billing Group] AS [Billing Group],\n\t[Service] AS [Service],\n\t[Department] AS [Department],\n\t[Cost Centre] AS [Cost Centre],\n\t[Allocation] AS [Allocation]\nFROM [lib://DataFiles/Telco Customer Billing Data Full.xlsx]\n(ooxml, embedded labels, table is [Customer Cost Centres]);\n",
+      "caching": {
+        "enabled": true,
+        "type": "qvd"
+      }
+    }
+  ],
+  "queries": [
+    {
+      "id": "dfa50e80-9a82-4c94-9149-691ffe718374",
+      "type": "Query",
+      "name": "Billing",
+      "tableRef": "dsd.Billing",
+      "status": "",
+      "fields": [
+        {
+          "id": "c0ee81b7-4fda-4027-a35e-9300657c9813",
+          "type": "QueryField",
+          "name": "Billing.Customer",
+          "fieldRef": "dsd.Billing.Customer",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "da91db07-05b4-44b1-af78-a16a2c4d6df7",
+          "type": "QueryField",
+          "name": "Billing.Billing Group",
+          "fieldRef": "dsd.Billing.Billing Group",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "b7567daf-a5ac-4e54-847f-239dea2f5c41",
+          "type": "QueryField",
+          "name": "Billing.Service",
+          "fieldRef": "dsd.Billing.Service",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "60787059-f48f-492e-b0ab-b43b5833a4c2",
+          "type": "QueryField",
+          "name": "Month",
+          "fieldRef": "dsd.Billing.Month",
+          "classifications": [
+            "date"
+          ],
+          "originalClassification": [
+            "date"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "0b5607e8-a46e-478d-8581-ac31936e8b5c",
+          "type": "QueryField",
+          "name": "Base Price",
+          "fieldRef": "dsd.Billing.Base Price",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "95a09e03-b65f-4c98-8124-17d1639e6958",
+          "type": "QueryField",
+          "name": "Units Consumed",
+          "fieldRef": "dsd.Billing.Units Consumed",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "f9637386-4171-41cc-aa11-6cc74c20d38a",
+          "type": "QueryField",
+          "name": "Amount w/o GST",
+          "fieldRef": "dsd.Billing.Amount w/o GST",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "d79f2cf7-2090-4c9d-b1c6-8b58b697316e",
+          "type": "QueryField",
+          "name": "GST",
+          "fieldRef": "dsd.Billing.GST",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "4ac9ce3f-76c5-423b-92cd-55baa935dba6",
+          "type": "QueryField",
+          "name": "Amount",
+          "fieldRef": "dsd.Billing.Amount",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "eb1d2be7-7ae0-40c5-84d3-ac27f3a40cd5",
+          "type": "QueryField",
+          "name": "Status",
+          "fieldRef": "dsd.Billing.Status",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        }
+      ]
+    },
+    {
+      "id": "f1f6b344-7d3d-46da-a964-9b56569a369c",
+      "type": "Query",
+      "name": "Contracts",
+      "tableRef": "dsd.Contracts",
+      "status": "",
+      "fields": [
+        {
+          "id": "0e6aef4e-d55b-42f9-b532-0e2704e0895b",
+          "type": "QueryField",
+          "name": "Contracts.Customer",
+          "fieldRef": "dsd.Contracts.Customer",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "3a406b5d-1238-490d-88f5-38cf0159abc2",
+          "type": "QueryField",
+          "name": "Contracts.Billing Group",
+          "fieldRef": "dsd.Contracts.Billing Group",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "f50133f8-61f4-4872-8422-1861df5ea203",
+          "type": "QueryField",
+          "name": "Contracts.Service",
+          "fieldRef": "dsd.Contracts.Service",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "e51ead24-827b-4471-9af8-74b9569f87b8",
+          "type": "QueryField",
+          "name": "Contract Start",
+          "fieldRef": "dsd.Contracts.Contract Start",
+          "classifications": [
+            "date"
+          ],
+          "originalClassification": [
+            "date"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "b897b94a-8821-46e5-b019-6fd097ea8932",
+          "type": "QueryField",
+          "name": "Contract End",
+          "fieldRef": "dsd.Contracts.Contract End",
+          "classifications": [
+            "date"
+          ],
+          "originalClassification": [
+            "date"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "4d4dfe39-6dcb-4463-9048-995c8d627426",
+          "type": "QueryField",
+          "name": "Term",
+          "fieldRef": "dsd.Contracts.Term",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        }
+      ]
+    },
+    {
+      "id": "cfa6c4a3-5283-469d-bee1-b9600ef3422b",
+      "type": "Query",
+      "name": "Customer Cost Centres",
+      "tableRef": "dsd.Customer Cost Centres",
+      "status": "",
+      "fields": [
+        {
+          "id": "57e87ce6-54f9-44c1-82a4-f8b36037ebb3",
+          "type": "QueryField",
+          "name": "Customer Cost Centres.Customer",
+          "fieldRef": "dsd.Customer Cost Centres.Customer",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "4bc5c24c-c5f6-49a7-9490-d6b7321d59c6",
+          "type": "QueryField",
+          "name": "Customer Cost Centres.Billing Group",
+          "fieldRef": "dsd.Customer Cost Centres.Billing Group",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "2d857b55-4534-43d8-9915-fc2b937d48b8",
+          "type": "QueryField",
+          "name": "Customer Cost Centres.Service",
+          "fieldRef": "dsd.Customer Cost Centres.Service",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "5024294f-a5da-4613-bb94-9a677280e51d",
+          "type": "QueryField",
+          "name": "Department",
+          "fieldRef": "dsd.Customer Cost Centres.Department",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "1fc3e150-b902-4750-bd77-1fa31bc6f890",
+          "type": "QueryField",
+          "name": "Cost Centre",
+          "fieldRef": "dsd.Customer Cost Centres.Cost Centre",
+          "classifications": [
+            "dimension"
+          ],
+          "originalClassification": [
+            "dimension"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        },
+        {
+          "id": "bfb4f50e-0e56-4566-ab19-ebe467c082ba",
+          "type": "QueryField",
+          "name": "Allocation",
+          "fieldRef": "dsd.Customer Cost Centres.Allocation",
+          "classifications": [
+            "measure"
+          ],
+          "originalClassification": [
+            "measure"
+          ],
+          "transformations": [],
+          "originalTransformations": []
+        }
+      ]
+    }
+  ],
+  "associations": {
+    "Customer": [
+      {
+        "tableId": "dfa50e80-9a82-4c94-9149-691ffe718374",
+        "fieldId": "c0ee81b7-4fda-4027-a35e-9300657c9813"
+      },
+      {
+        "tableId": "f1f6b344-7d3d-46da-a964-9b56569a369c",
+        "fieldId": "0e6aef4e-d55b-42f9-b532-0e2704e0895b"
+      },
+      {
+        "tableId": "cfa6c4a3-5283-469d-bee1-b9600ef3422b",
+        "fieldId": "57e87ce6-54f9-44c1-82a4-f8b36037ebb3"
+      }
+    ]
+  },
+  "locale": {
+    "0": "e",
+    "1": "n",
+    "2": "-",
+    "3": "U",
+    "4": "S"
+  },
+  "defaultCalendar": {
+    "id": "autoCalendar",
+    "name": "autoCalendar",
+    "appliedToTags": [
+      "$date"
+    ],
+    "derivedFields": [
+      {
+        "id": "Decade",
+        "name": "Decade",
+        "translation": "",
+        "definition": "Dual(Div(Year($1),10)*10, MakeDate(Div(Year($1),10)*10, 1, 1))",
+        "tags": [
+          "$axis",
+          "$decade"
+        ],
+        "selected": false
+      },
+      {
+        "id": "Year",
+        "name": "Year",
+        "translation": "scripteditor.autoCalendarYear",
+        "definition": "Dual(Year($1), YearStart($1))",
+        "tags": [
+          "$axis",
+          "$year"
+        ],
+        "selected": true
+      },
+      {
+        "id": "Quarter",
+        "name": "Quarter",
+        "translation": "scripteditor.autoCalendarQuarter",
+        "definition": "Dual('Q'\u0026Num(Ceil(Num(Month($1))/3)),Num(Ceil(NUM(Month($1))/3),00))",
+        "tags": [
+          "$quarter",
+          "$cyclic"
+        ],
+        "selected": true
+      },
+      {
+        "id": "YearQuarter",
+        "name": "YearQuarter",
+        "translation": "scripteditor.autoCalendarQuarterYear",
+        "definition": "Dual(Year($1)\u0026'-Q'\u0026Num(Ceil(Num(Month($1))/3)),QuarterStart($1))",
+        "tags": [
+          "$yearquarter",
+          "$qualified"
+        ],
+        "selected": true
+      },
+      {
+        "id": "_YearQuarter",
+        "name": "_YearQuarter",
+        "translation": "scripteditor.autoCalendarQuarterYear",
+        "definition": "Dual('Q'\u0026Num(Ceil(Num(Month($1))/3)),QuarterStart($1))",
+        "tags": [
+          "$yearquarter",
+          "$hidden",
+          "$simplified"
+        ],
+        "selected": true
+      },
+      {
+        "id": "Month",
+        "name": "Month",
+        "translation": "scripteditor.autoCalendarMonth",
+        "definition": "Month($1)",
+        "tags": [
+          "$month",
+          "$cyclic"
+        ],
+        "selected": true
+      },
+      {
+        "id": "YearMonth",
+        "name": "YearMonth",
+        "translation": "scripteditor.autoCalendarMonthYear",
+        "definition": "Dual(Year($1)\u0026'-'\u0026Month($1), monthstart($1))",
+        "tags": [
+          "$axis",
+          "$yearmonth",
+          "$qualified"
+        ],
+        "selected": true
+      },
+      {
+        "id": "_YearMonth",
+        "name": "_YearMonth",
+        "translation": "scripteditor.autoCalendarMonthYear",
+        "definition": "Dual(Month($1), monthstart($1))",
+        "tags": [
+          "$axis",
+          "$yearmonth",
+          "$simplified",
+          "$hidden"
+        ],
+        "selected": true
+      },
+      {
+        "id": "Week",
+        "name": "Week",
+        "translation": "scripteditor.autoCalendarWeek",
+        "definition": "Dual('W'\u0026Num(Week($1),00), Num(Week($1),00))",
+        "tags": [
+          "$weeknumber",
+          "$cyclic"
+        ],
+        "selected": true
+      },
+      {
+        "id": "YearWeek",
+        "name": "YearWeek",
+        "translation": "",
+        "definition": "Dual(Year($1)\u0026'-W'\u0026num(Week($1),00), weekstart($1))",
+        "tags": [
+          "$yearweek"
+        ],
+        "selected": false
+      },
+      {
+        "id": "WeekDay",
+        "name": "WeekDay",
+        "translation": "",
+        "definition": "Dual(WeekDay($1),num(WeekDay($1)))",
+        "tags": [
+          "$weekday"
+        ],
+        "selected": false
+      },
+      {
+        "id": "Date",
+        "name": "Date",
+        "translation": "scripteditor.autoCalendarDate",
+        "definition": "Date(Floor($1))",
+        "tags": [
+          "$axis",
+          "$date",
+          "$qualified"
+        ],
+        "selected": true
+      },
+      {
+        "id": "_Date",
+        "name": "_Date",
+        "translation": "scripteditor.autoCalendarDate",
+        "definition": "Date(Floor($1), 'D')",
+        "tags": [
+          "$axis",
+          "$date",
+          "$hidden",
+          "$simplified"
+        ],
+        "selected": true
+      }
+    ],
+    "groups": [
+      {
+        "name": "YearMonthDay",
+        "drillDown": "true",
+        "fieldRefs": [
+          "Year",
+          "Month",
+          "WeekDay"
+        ]
+      },
+      {
+        "name": "YearMonth",
+        "drillDown": "false",
+        "fieldRefs": [
+          "Year",
+          "Month"
+        ]
+      }
+    ],
+    "deriveFieldsType": "fieldExplicit"
+  },
+  "schemaVersion": 2.1
+}
